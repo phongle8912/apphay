@@ -14,8 +14,11 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        'df545d92fe9aa76af6f1121aa4641d19' => __DIR__ . '/..' . '/nayjest/manipulator/src/mp.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,6 +33,11 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'U' => 
+        array (
+            'Unisharp\\Laravelfilemanager\\' => 28,
+            'Unisharp\\Ckeditor\\' => 18,
         ),
         'S' => 
         array (
@@ -55,7 +63,13 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         array (
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
             'PhpParser\\' => 10,
+        ),
+        'N' => 
+        array (
+            'Nayjest\\Grids\\' => 14,
+            'Nayjest\\Builder\\' => 16,
         ),
         'M' => 
         array (
@@ -67,7 +81,12 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         ),
         'I' => 
         array (
+            'Intervention\\Image\\' => 19,
             'Illuminate\\' => 11,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
         ),
         'F' => 
         array (
@@ -80,6 +99,7 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         ),
         'C' => 
         array (
+            'Collective\\Html\\' => 16,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
         ),
@@ -104,6 +124,14 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Unisharp\\Laravelfilemanager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/unisharp/laravel-filemanager/src',
+        ),
+        'Unisharp\\Ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/unisharp/laravel-ckeditor',
         ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
@@ -181,9 +209,21 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Nayjest\\Grids\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nayjest/grids/src',
+        ),
+        'Nayjest\\Builder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nayjest/builder/src',
         ),
         'Monolog\\' => 
         array (
@@ -193,9 +233,17 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
+        'Intervention\\Image\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
         'Faker\\' => 
         array (
@@ -208,6 +256,10 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
         ),
         'ClassPreloader\\' => 
         array (
@@ -346,6 +398,7 @@ class ComposerStaticInit41b9ba05ee072ff6364a0c15a99f3347
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
         'IlluminateQueueClosure' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
+        'Nayjest\\StrCaseConverter\\Str' => __DIR__ . '/..' . '/nayjest/str-case-converter/src/Str.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',

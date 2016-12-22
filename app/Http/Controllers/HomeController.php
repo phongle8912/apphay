@@ -2,25 +2,47 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
-use App\App;
+use Illuminate\Http\Request;
+use App\Modules\Backend\Models\App;
 
 class HomeController extends Controller
 {
-    public function index() {
-    	$apps = App::orderBy('created_at')->get();
-    	return view('welcome')->with('apps', $apps);
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+//        $this->middleware('auth');
     }
 
-    public function detail($id) {
-    	$app = App::where('id', '=', $id)->first();
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('app');
+    }
 
-		$apps = App::orderBy('created_at')->get();
-
-    	return view('detail')
-    			->with('app', $app)
-    			->with('apps', $apps);
+    /**
+    * show app detail 
+    *@param int $id 
+    */
+    public function detail($slug){
+        $app = App::where('slug', '=', $slug)
+        ->where('status', '=', App::STATUS_ACTIVE)
+        ->first();
+        if(!$app){
+            return redirect('/')->with('msgError', 'App does not found.');
+        }
+        $apps = App::where('status', '=', App::STATUS_ACTIVE)
+        ->take(4)
+        ->get();
+        $script = $app->script;
+        return view('detail', compact('app', 'apps', 'script'));
     }
 }

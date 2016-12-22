@@ -19,10 +19,13 @@ class CreateAppsTable extends Migration {
 			$table->string('name', 255);
 			$table->string('slug', 255);
 			$table->text('description');
+			$table->string('short_description', 255);
 			$table->string('meta_desc', 160);
 			$table->string('keywords', 160);
-			$table->text('content');
+			$table->text('code');
 			$table->string('image');
+			$table->string('script', 255);
+			$table->enum('status', array('active', 'inactive'))->default('active');
 			$table->timestamp('created_at');
 			$table->datetime('updated_at');
 		});

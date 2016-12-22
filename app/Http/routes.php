@@ -13,4 +13,10 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('detail/{id}', 'HomeController@detail');
+Route::get('detail/{slug}', 'HomeController@detail');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+Route::group(['middleware' => ['web']], function () {
+    // your routes here
+});

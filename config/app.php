@@ -148,6 +148,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
+
         /*
          * Application Service Providers...
          */
@@ -155,6 +157,14 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        ArtemSchander\L5Modular\ModuleServiceProvider::class,
+        Nayjest\Grids\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class
+
+
 
     ],
 
@@ -201,6 +211,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
+        'Grids'     => Nayjest\Grids\Grids::class,
+        'Form'  => Collective\Html\FormFacade::class,
+        'HTML'  => Collective\Html\HtmlFacade::class,
+        'Image' => Intervention\Image\Facades\Image::class
+
 
     ],
 

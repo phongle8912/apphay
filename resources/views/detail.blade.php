@@ -61,7 +61,7 @@
                     </div>
 
 
-              {!!$app->content!!}
+              {!!$app->code!!}
 
               <div class="markLoadImg">
                         <h1>Đang xử lý cmn kết quả, chờ xí ^^!</h1>
@@ -761,5 +761,7 @@ if($('#game-4').length > 0){
     }
     }
 </script>
-
-@stop
+@if(!empty($script))
+<script type="text/javascript" src="{{URL($script)}}"></script>
+@endif
+@endsection
